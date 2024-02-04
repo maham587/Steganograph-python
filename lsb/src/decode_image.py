@@ -97,6 +97,4 @@ def decode_image(image_path):
     hidden_image_pixels = extract_hidden_pixels(image_copy, width_visible, height_visible, pixel_count)
     decoded_image = reconstruct_image(hidden_image_pixels, width_hidden, height_hidden)
     return decoded_image
-
-if __name__ == '__main__':
-    main()
+ 

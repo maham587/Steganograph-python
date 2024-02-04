@@ -64,7 +64,7 @@ def Decode_binary(src, index):
     binary_data = ''.join(hidden_bits)
     byte_data = bytearray(int(binary_data[i:i+8], 2) for i in range(0, len(binary_data), 8))
     
-    with open('target.pdf', 'wb') as pdf_file:
+    with open('../outputs/output.pdf', 'wb') as pdf_file:
         pdf_file.write(byte_data)
 
     print("PDF Decoded Successfully")

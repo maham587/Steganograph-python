@@ -129,6 +129,4 @@ def encode_image(visible_image_path, hidden_image_path):
     hidden_image_pixels = get_binary_pixel_values(hidden_image_copy, width_hidden, height_hidden)
     encoded_image = change_binary_values(encoded_image, hidden_image_pixels, width_visible, height_visible, width_hidden, height_hidden)
     return visible_image
-
-if __name__ == '__main__':
-    main()
+ 
