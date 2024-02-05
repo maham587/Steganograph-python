@@ -44,3 +44,14 @@ It will hide the image in the image.
 If you want to retrieve the image you hided you have to execute test_decode_img().
 
 To test encoding and decoding a text in the image using LSB or DCT, you can directly execute the interface.
+
+### appliquer dct et et lsb sur l'interface graphique 
+
+taper les commandes suivantes  :
+
+cd dct_and_GUI 
+source venv/bin/activate
+
+# install python3 or python 
+
+python3 gui.py
