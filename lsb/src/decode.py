@@ -20,4 +20,4 @@ def extract_key(key_string):
         type_encoded = components[1]
         return nb_pixel_used, type_encoded
     else:
-        raise ValueError("Invalid key format")
+        raise ValueError("Invalid key formaat")
