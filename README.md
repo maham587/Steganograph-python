@@ -1,5 +1,4 @@
-## SB Image Steganograph (Least-Significant Bit)
-
+## Steganograph in python LSB and DCT 
 ### Description
 
 Steganography it is to embeded data inside multimedia with a very geniune manner so that no one can access this data such us photo, video, gif
