@@ -15,7 +15,7 @@ We will implement decoding version
 
 ##### encode image
 
-You provide an OpenCV image and the method iterates for every pixel in order to hide them. A good practice is to have a carrier 8 times bigger than the image to hide (so that each pixel will be put only in the first bit).
+You provide an image and the method iterates for every pixel in order to hide them. A good practice is to have a carrier 8 times bigger than the image to hide (so that each pixel will be put only in the first bit).
 We will implement decoding version
 
 ##### encode binary
@@ -31,3 +31,17 @@ A key + signature will be sent to destination in order to perform decoding tasks
 ### Bibliography
 
 https://medium.com/swlh/lsb-image-steganography-using-python-2bbbee2c69a2
+
+
+### How to run the code
+Once you have cloned the git repository in your workspace open the main.py file and at the end of the file you will see : 
+if __name__ == '__main__':
+    test_pdf()
+This means if you execute the main function it will call the test_pdf which will encode a PDF file into an image. You can find the image succesfully encoded in outputs.
+
+
+If you want to execute the part that encodes an image in an image you have to run test_code_img() in place of test_pdf()
+It will hide the image in the image.
+If you want to retrieve the image you hided you have to execute test_decode_img().
+
+To test encoding and decoding a text in the image using LSB or DCT, you can directly execute the interface.

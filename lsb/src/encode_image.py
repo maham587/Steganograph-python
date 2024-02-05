@@ -2,24 +2,7 @@ import os
 from PIL import Image
 from utils import rgb_to_binary, add_leading_zeros
 
-def main():
-    """
-    Opens two specified images, an image we want to conceal and an image we want to use for concealing,
-    hides the image information in the binary pixel values of the other image and saves
-    the resulting image in a specified location or the default location if no location is specified.
 
-    The number of pixels in the image used for hiding an image must be at least (2 * number of pixels in the image to be
-    hidden + 1)
-
-    Call example:
-        python encode.py img/vis.jpg img/hid.jpg img/output.png
-    """
-
-    visible_image_path = r'C:\Users\sambh\OneDrive\Images\Pellicule\cover_image_sky.png'
-    hidden_image_path = r'C:\Users\sambh\OneDrive\Images\Pellicule\sunset_200x200.png'
-    encoded_image_path = r'C:\Users\sambh\OneDrive\Images\Pellicule\ciphered_image.png'
-    encoded_image = encode_image(visible_image_path, hidden_image_path)
-    encoded_image.save(encoded_image_path)
 
 def get_binary_pixel_values(image, width, height):
     """

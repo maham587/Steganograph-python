@@ -2,19 +2,6 @@ import os
 from PIL import Image
 from utils import rgb_to_binary
 
-def main():
-    """
-    Opens an image which contains information of a hidden image,
-    recovers the hidden image and saves it in a specified or
-    default location.
-
-    Call example:
-        python decode.py img/output.png img/res.png
-    """
-    encoded_image_path = r'C:\Users\sambh\OneDrive\Images\Pellicule\ciphered_image.png'
-    decoded_image_path = r'C:\Users\sambh\OneDrive\Images\Pellicule\deciphered_image.png'
-    decoded_image = decode_image(encoded_image_path)
-    decoded_image.save(decoded_image_path)
 
 def extract_hidden_pixels(image, width_visible, height_visible, pixel_count):
     """

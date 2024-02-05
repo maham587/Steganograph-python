@@ -24,7 +24,7 @@ def test_decode_img():
     decoded_image.save("../outputs/output.png")
 
 if __name__ == '__main__':
-    test_pdf()
+    test_text()
 
 
     
