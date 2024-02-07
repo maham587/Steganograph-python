@@ -12,7 +12,7 @@ from PIL import Image
 from pathlib import Path
 #from scipy import signal
 quant = np.array([[16,11,10,16,24,40,51,61],      # QUANTIZATION TABLE
-                    [12,12,14,19,26,58,60,55],    # required for DCT
+                    [12,12,14,19,26,58,60,55],    # required for DCT ahahah
                     [14,13,16,24,40,57,69,56],
                     [14,17,22,29,51,87,80,62],
                     [18,22,37,56,68,109,103,77],
