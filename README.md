@@ -51,8 +51,9 @@ In the GUI, we have implemented the DCT and LSB to hide texts in the image. You 
 To run that part of the code you should have these libraries installed with pip3 install : matplotlib, cryptography, xlwt, PyQt5
 Then tap these commands : 
 cd Steganograph-python
-source venv/bin/activate
+
 cd dct_and_GUI => make sure you are in the directory containing gui.py
+
 python gui.py => to run the code and you should see the interface shown
 
 ### Make sure you have python3 installed 
