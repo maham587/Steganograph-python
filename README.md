@@ -50,8 +50,8 @@ To test encoding and decoding a text in the image using LSB or DCT, you can dire
 taper les commandes suivantes  :
 
 cd Steganograph-python
-cd dct_and_GUI 
 source venv/bin/activate
+cd dct_and_GUI 
 
 # install python3 or python 
 
