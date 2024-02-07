@@ -33,7 +33,8 @@ https://medium.com/swlh/lsb-image-steganography-using-python-2bbbee2c69a2
 
 
 ### How to run the code
-Once you have cloned the git repository in your workspace open the main.py file and at the end of the file you will see : 
+#### LSB hiding image in image, text in image or pdf in image :
+Once you have cloned the git repository in your workspace open the main.py file in lsb>src>main.Py  and at the end of the file you will see : 
 if __name__ == '__main__':
     test_pdf()
 This means if you execute the main function it will call the test_pdf which will encode a PDF file into an image. You can find the image succesfully encoded in outputs.
@@ -45,15 +46,14 @@ If you want to retrieve the image you hided you have to execute test_decode_img(
 
 To test encoding and decoding a text in the image using LSB or DCT, you can directly execute the interface.
 
-### appliquer dct et et lsb sur l'interface graphique 
-
-taper les commandes suivantes  :
-
-
-
-cd Steganograph-python/dct_and_GUI 
+#### How to run DCT and LSB with the user interface (GUI):
+In the GUI, we have implemented the DCT and LSB to hide texts in the image. You can choose whether you hide the text with LSB or DCT method on the interface. 
+To run that part of the code you should have these libraries installed with pip3 install : matplotlib, cryptography, xlwt, PyQt5
+Then tap these commands : 
+cd Steganograph-python
 source venv/bin/activate
+cd dct_and_GUI => make sure you are in the directory containing gui.py
+python gui.py => to run the code and you should see the interface shown
 
-# install python3 or python 
+### Make sure you have python3 installed 
 
-python3 gui.py
